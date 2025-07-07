@@ -15,10 +15,8 @@ echo "NGINX configuration is valid!"
 
 # Wait for WordPress to be ready
 echo "Waiting for WordPress to be ready..."
-while ! nc -z wordpress 9000; do
-    sleep 1
-done
-echo "WordPress is ready!"
+sleep 10
+echo "WordPress should be ready!"
 
 echo "Starting NGINX..."
 

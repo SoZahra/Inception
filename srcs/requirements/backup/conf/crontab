@@ -1,0 +1,2 @@
+# Backup crontab - runs every 6 hours
+0 */6 * * * backup /usr/local/bin/backup.sh >> /var/log/backup/backup.log 2>&1

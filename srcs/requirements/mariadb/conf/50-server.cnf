@@ -1,0 +1,15 @@
+[mysqld]
+user = mysql
+port = 3306
+bind-address = 0.0.0.0
+datadir = /var/lib/mysql
+socket = /tmp/mysql.sock
+pid-file = /tmp/mysqld.pid
+skip-networking = false
+lower_case_table_names = 2
+
+[mysql]
+socket = /tmp/mysql.sock
+
+[mysqldump]
+socket = /tmp/mysql.sock
